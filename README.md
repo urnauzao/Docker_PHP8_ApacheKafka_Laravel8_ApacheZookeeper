@@ -1,3 +1,8 @@
+# Antes de Iniciar...
+Será preciso fazer build localmente da imagem docker que está sendo utilizado pela stack system.yml
+> docker build ./docker/php/ -t testephp
+Agora temos uma imagem chamada testephp localmente compilada e pronta para uso no docker.
+
 # Dependências do Sistema Operacional/PHP
 - @CentOS
 > RUN apt install librdkafka-dev -y && pecl install rdkafka 
